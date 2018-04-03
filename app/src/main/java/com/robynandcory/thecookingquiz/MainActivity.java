@@ -24,7 +24,8 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Called when user hits the Check my Answers button
-     * @param view
+     * @param view 'check my answers' button
+     * adds 10 to quiz score for each fully correct answer
      */
 
     public void checkAnswers(View view) {
@@ -49,9 +50,11 @@ public class MainActivity extends AppCompatActivity {
         if (getQuestion7()) {
             quizScore += 10;
         }
-
+// Toast 'Try again' is only shown if all questions are answered incorrectly.
         if (quizScore == 0) {
             Toast.makeText(MainActivity.this, "Try again", Toast.LENGTH_LONG).show();
+
+            // Score Toast displays total quiz score when check answers is pressed
         } else {
             Toast.makeText(MainActivity.this, "You scored " + quizScore + " points out of 70!", Toast.LENGTH_LONG).show();
             quizScore = 0;
@@ -67,6 +70,8 @@ public class MainActivity extends AppCompatActivity {
         RadioButton questionTwo = findViewById(R.id.answer2_4);
         return questionTwo.isChecked();
     }
+
+    // returns true if the user enters any combination of the word roux for question three
 
     public Boolean getQuestion3() {
         EditText questionThreeEditText = findViewById(R.id.questionThree);
