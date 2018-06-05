@@ -71,8 +71,9 @@ public class MainActivity extends AppCompatActivity {
         return questionTwo.isChecked();
     }
 
-    // returns true if the user enters any combination of the word roux for question three
-
+    /**
+     * returns true if the user enters any combination of the word roux for question three.
+     */
     public Boolean getQuestion3() {
         EditText questionThreeEditText = findViewById(R.id.questionThree);
         String questionThreeString = questionThreeEditText.getText().toString();
