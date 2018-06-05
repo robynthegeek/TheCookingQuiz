@@ -24,8 +24,9 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Called when user hits the Check my Answers button
+     *
      * @param view 'check my answers' button
-     * adds 10 to quiz score for each fully correct answer
+     *             adds 10 to quiz score for each fully correct answer
      */
 
     public void checkAnswers(View view) {
@@ -72,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * returns true if the user enters any combination of the word roux for question three.
+     * returns true if the user enters any combination of the word roux for question three to allow for formatting and indefinite articles.
      */
     public Boolean getQuestion3() {
         EditText questionThreeEditText = findViewById(R.id.questionThree);
@@ -102,6 +103,7 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Checks answers for question 7, compares to set of correct answers
+     *
      * @return boolean true for all 3 correct answers and no incorrect answers.
      */
 
@@ -113,30 +115,30 @@ public class MainActivity extends AppCompatActivity {
         Set<Integer> submittedAnswersQuestion7 = new HashSet<>();
 
         CheckBox questionOne = findViewById(R.id.answer7_1);
-        if (questionOne.isChecked()){
+        if (questionOne.isChecked()) {
             submittedAnswersQuestion7.add(R.id.answer7_1);
         }
 
         CheckBox questionTwo = findViewById(R.id.answer7_2);
-        if (questionTwo.isChecked()){
+        if (questionTwo.isChecked()) {
             submittedAnswersQuestion7.add(R.id.answer7_2);
         }
 
         CheckBox questionThree = findViewById(R.id.answer7_3);
-        if (questionThree.isChecked()){
+        if (questionThree.isChecked()) {
             submittedAnswersQuestion7.add(R.id.answer7_3);
         }
 
         CheckBox questionFour = findViewById(R.id.answer7_4);
-        if (questionFour.isChecked()){
+        if (questionFour.isChecked()) {
             submittedAnswersQuestion7.add(R.id.answer7_4);
         }
 
         CheckBox questionFive = findViewById(R.id.answer7_5);
-        if (questionFive.isChecked()){
+        if (questionFive.isChecked()) {
             submittedAnswersQuestion7.add(R.id.answer7_5);
         }
-       return submittedAnswersQuestion7.equals(answerQuestion7);
+        return submittedAnswersQuestion7.equals(answerQuestion7);
     }
 }
 

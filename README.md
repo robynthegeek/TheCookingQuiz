@@ -1,6 +1,6 @@
 # TheCookingQuiz
 This project is Copyright (c) 2018 Robyn Klopp Kolbeck 
-All the work contained herein is my own original work.  You may use it as reference material, but all copies must carry the full license information and credit me as the original author
+All the work contained herein is my own original work.  You may use it as reference material, but all copies must carry the full license information and credit me as the original author.
 
 ![thecookingquizscreenshot](https://user-images.githubusercontent.com/1616363/41006162-401161c0-68d5-11e8-95ee-1896aa73ce05.png)
 
